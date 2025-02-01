@@ -26,7 +26,10 @@ vector<int> solution(int brown, int yellow)
             }
         }
     }
+    
+    return {total};
 }
+
 /* 반례 몇 개가 틀림 (너무 단순하게 생각함)
 const short even = 0;
 const short odd = 1;

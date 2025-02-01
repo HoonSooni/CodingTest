@@ -62,3 +62,35 @@ public:
         return false;
     }
 };
+
+/* second solution
+class Solution {
+public:
+ bool equalFrequency(string word) {
+     unordered_map<char, int> frequencyPerChar;
+     
+     for (char letter : word) {
+         frequencyPerChar[letter]++;
+     }
+     
+     for (pair<char, int> freqFirst : frequencyPerChar) {
+         // trying to remove a character
+         frequencyPerChar[freqFirst.first]--;
+         
+         // checking if the elimination satisfies the condition or not
+         unordered_set<int> freqSet;
+         for (pair<char, int> freqSecond : frequencyPerChar) {
+             if (freqSecond.second > 0) {
+                 freqSet.insert(freqSecond.second);
+             }
+         }
+         
+         if (freqSet.size() == 1) return true;
+
+         frequencyPerChar[freqFirst.first]++;
+     }
+     
+     return false;
+ }
+};
+ */
