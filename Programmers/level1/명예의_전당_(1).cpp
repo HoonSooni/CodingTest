@@ -1,4 +1,4 @@
-// 명예의 전당 (1)
+// 명예의 전당
 // https://school.programmers.co.kr/learn/courses/30/lessons/138477
 
 #include <iostream>
@@ -25,17 +25,3 @@ vector<int> solution(int k, vector<int> score)
     
     return answer;
 }
-
-/*
-int main()
-{
-    vector<int> temp = solution(4, vector<int>{0, 300, 40, 300, 20, 70, 150, 50, 500, 1000});
-    
-    for (int num : temp)
-    {
-        cout << num << ' ';
-    }
-    cout << endl;
-    return 0;
-}
-*/

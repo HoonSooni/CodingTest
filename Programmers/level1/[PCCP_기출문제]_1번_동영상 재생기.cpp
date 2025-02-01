@@ -56,9 +56,7 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
     return convertDecimaltoTime(position);
 }
 
-/*
 int main() {
     cout << solution("10:55", "00:05", "00:15", "06:55", {"prev", "next", "next"}) << endl;
     return 0;
 }
-*/

@@ -16,9 +16,7 @@ int solution(vector<int> nums)
     const size_t maximum = nums.size() / 2;
     set<int> s(nums.begin(), nums.end());
     
-//    return s.size() > maximum ? maximum : s.size();
-    
-    return 0;
+    return s.size() > maximum ? maximum : s.size();
 }
 
 /*

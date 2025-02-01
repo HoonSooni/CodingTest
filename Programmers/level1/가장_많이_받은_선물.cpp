@@ -1,6 +1,3 @@
-// 가장 많이 받은 선물
-// https://school.programmers.co.kr/learn/courses/30/lessons/258712
-
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -70,7 +67,6 @@ int solution(vector<string> friends, vector<string> gifts) {
     return max;
 }
 
-/*
 int main() {
     vector<string> names1 = { "muzi", "ryan", "frodo", "neo" };
     vector<string> giftExchanges1 = { "muzi frodo", "muzi frodo", "ryan muzi", "ryan muzi", "ryan muzi", "frodo muzi", "frodo ryan", "neo muzi" };
@@ -85,4 +81,3 @@ int main() {
     cout << "result: " << result << endl;
     return 0;
 }
-*/

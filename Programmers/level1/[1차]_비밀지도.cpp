@@ -72,19 +72,3 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2)
 
     return answer;
 }
-
-/*
-int main()
-{
-    vector<int> vec1 = {46, 33, 33 ,22, 31, 50};
-    vector<int> vec2 = {27, 56, 19, 14, 14, 10};
-    vector<string> temp = solution(6, vec1, vec2);
-    
-    for (string row : temp)
-    {
-        cout << row << endl;
-    }
-    
-    return 0;
-}
-*/

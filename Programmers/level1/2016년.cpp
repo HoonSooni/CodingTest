@@ -27,7 +27,7 @@ string solution(int a, int b)
     
     return weeks[(totalDays % 7)];
 }
-/*
+
 int main() {
     // For Testing
 //    for (int i = 1; i <= 12; ++i) {
@@ -42,4 +42,3 @@ int main() {
     
     return 0;
 }
-*/
