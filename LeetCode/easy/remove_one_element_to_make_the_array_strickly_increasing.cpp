@@ -33,8 +33,6 @@ public:
                 
                 nums.erase(erasePos);
                 isFound = true;
-                
-                if (i > nums.size()) { i = nums.size(); }
             }
         }
         
