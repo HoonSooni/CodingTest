@@ -64,8 +64,10 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
     return emailCount;
 }
 
+/*
 int main() {
     solution({"con", "ryan"}, {"ryan con", "ryan con", "ryan con", "ryan con"}, 3);
     
     return 0;
 }
+*/
