@@ -12,9 +12,6 @@
 
 using namespace std;
 
-// [5, 1, 5]     30     [[2, 10], [9, 15], [10, 5], [11, 5]]     5
-// it cannot exceed the maximum value
-
 int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
     unsigned int seconds = 0;
     unsigned int consecutiveSeconds = 0;
@@ -53,7 +50,9 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
     return currentHealth;
 }
 
+/*
 int main() {
     cout << solution({1, 1, 1}, 20, {{1, 15}, {5, 16}, {8, 6}}) << endl;
     return 0;
 }
+*/
