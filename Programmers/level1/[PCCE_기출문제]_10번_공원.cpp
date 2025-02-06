@@ -14,6 +14,7 @@ using namespace std;
 
 int solution(vector<int> mats, vector<vector<string>> park) {
     set<int> availableSizes;
+    unsigned int max = 0;
     
     for (int i = 0; i < park.size(); ++i) {
         for (int j = 0; j < park[i].size(); ++j) {
@@ -40,7 +41,6 @@ int solution(vector<int> mats, vector<vector<string>> park) {
                         for (int x = originalJ; x <= originalJ + size; ++x) {
                             if (originalI + size < park.size() && x < park[0].size()) {
                                 if (park[originalI + size][x] != "-1") {
-                                    availableSizes.insert(size);
                                     isExpandable = false;
                                     break;
                                 }
@@ -48,18 +48,19 @@ int solution(vector<int> mats, vector<vector<string>> park) {
                         }
                         
                         size++;
-
                     } else {
-                        availableSizes.insert(size);
+                        // when isExpandable is false save the maximum value
+                        max = max(max, size);
                     }
                 }
             }
         }
     }
     
-    unsigned int max = *availableSizes.rbegin();
+    // sorting mats[] to make the comparison easier
     sort(mats.begin(), mats.end());
     
+    // comparing from the biggest value in the mats
     for (int i = mats.size() - 1; i >= 0; --i) {
         if (mats[i] <= max) { return mats[i]; }
     }
