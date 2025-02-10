@@ -39,6 +39,7 @@ public:
     }
 };
 
+/*
 int main() {
     vector<int> test1 = {3, 2, 5, 4}; // 5, 3
     vector<int> test2 = {1, 2}; // 2, 1
@@ -57,4 +58,4 @@ int main() {
     cout << Solution().longestAlternatingSubarray(test7, 18) << endl; // 1
     return 0;
 }
-
+*/
